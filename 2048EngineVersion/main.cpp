@@ -13,15 +13,28 @@
 	这其中就要用到
 */
 
-struct Graphy
+typedef struct Posistions
 {
-	
-};
+	int x;
+	int y;
+}Posistion;
 
 
+
+typedef struct Boxs {
+	Posistions pos;
+	int size;
+	color_t color;
+	int nun;
+}Box[16];
+
+void Move() {
+
+}
 
 void creatGraphy(int num,int x, int y,int size, color_t color)
 {
+	cleardevice();
 	setcolor(color);
 	setfillcolor(color);
 	bar(x-size/2, y-size/2, x + size/2, y + size/2);
